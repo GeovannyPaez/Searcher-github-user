@@ -4,7 +4,7 @@ import {useState,ChangeEvent} from 'react'
 import { StyleStack, StyleTextField } from "./style"
 import {Search} from '@mui/icons-material'
 interface PropsSearcher {
-    onSearch:(value:string)=>void
+    onSearch:React.Dispatch<React.SetStateAction<string>>
 }
 
 export const Searcher:React.FC<PropsSearcher> = ({onSearch}) => {
